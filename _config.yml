@@ -12,7 +12,6 @@ github_repo: "https://github.com/bishuiliuyun/bishuiliuyun.github.io.git" # you 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "不经过战斗的舍弃是虚伪的"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
