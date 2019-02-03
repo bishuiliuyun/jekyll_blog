@@ -1,7 +1,7 @@
 # Site settings
-title: Bishuiliuyun Blog
+title: bishuiliuyun blog
 SEOTitle: bishuiliuyun blog | by bishuiliuyun
-header-img: img/post-bg-desk.jpg
+header-img: img/home_picture.jpg
 email: bishuiliuyun@126.com
 description: "平和而执着 谦虚而无畏"
 keyword: "C C++"
@@ -17,7 +17,7 @@ sidebar: true                           # whether or not using Sidebar.
 
 # SNS settings
 RSS: false
-github_username:    bishuiliuyun
+github_username: bishuiliuyun
 
 
 
@@ -49,12 +49,9 @@ kramdown:
 
 # 统计
 # Analytics settings
-# Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
-
 # Google Analytics
-ga_track_id: 'UA-20190203-1'            # Format: UA-xxxxxx-xx
-ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+#ga_track_id: 'UA-20190203-1'           # Format: UA-xxxxxx-xx
+#ga_domain: auto                        # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 # Featured Tags
