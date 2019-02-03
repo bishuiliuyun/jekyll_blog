@@ -1,0 +1,43 @@
+### test
+```c++
+#include <string.h>
+#include <unordered_map>
+#include <iostream>
+
+struct Test {
+    Test() : a(0), b(1), c(2) { }
+    int a;
+    int b;
+    int c;
+};
+
+int main() {
+    std::unordered_map<int, Test*> map;
+    for (int i = 0; i < 16; ++i) {
+        Test *ptr = new Test();
+        map.insert(std::pair<int, Test*>(i, ptr));
+    }
+    
+    std::unordered_map<int, Test*>::iterator it;
+    it = map.find(1);
+    char buf[12] = {0};
+    if (it != map.end()) {
+        memcpy(it->second, buf, sizeof(buf));
+        std::cout << "bad memcpy" << std::endl;
+    }
+    
+    for (it = map.begin(); it != map.end(); ++it) {
+        std::cout << "iterator: " << it->first << std::endl;
+    }
+    
+    for (int i = 0; i < 16; ++i) {
+        it = map.find(i);
+        if (it != map.end()) {
+            std::cout << "find " << i << std::endl;
+        }
+    }
+    
+    map.insert(std::pair<int, Test*>(1, NULL));
+    return 0;
+}
+```
