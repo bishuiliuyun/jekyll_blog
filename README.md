@@ -7,3 +7,5 @@ index.html
 tags.html
 # 个人说明页
 about.html
+# 克隆后可以在本地执行如下命令进行本地调试
+jekyll s --incremental
